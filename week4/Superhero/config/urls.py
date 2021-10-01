@@ -15,6 +15,7 @@ Including another URLconf
 from hero.views import IndexView, HeroDetailView, HeroListView
 from django.contrib import admin
 from django.urls import path
+from hero.views import HeroListView, HeroDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),

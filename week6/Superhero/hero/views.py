@@ -19,3 +19,18 @@ class HeroDetailView(TemplateView):
 
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+class HeroCreateView(LoginRequiredMixin, CreateView):
+    model = Superhero
+    template_name = 'hero_add.html'
+    fields = ['name', 'identity', 'image', 'description']
+
+class HeroUpdateView(LoginRequiredMixin, UpdateView):
+    model = Superhero
+    template_name = 'hero_edit.html'
+    fields = ['name', 'identity', 'image', 'description']
+
+class HeroDeleteView(LoginRequiredMixin, DeleteView):
+    model = Superhero
+    template_name = 'hero_delete.html'
+    success_url = reverse_lazy('hero_list')

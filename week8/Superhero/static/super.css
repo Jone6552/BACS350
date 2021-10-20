@@ -1,0 +1,8 @@
+h1 {
+    color: red;
+    background-color: black;
+    padding: 20px;
+    border: 5px solid white;
+    border-radius: 2px 2px 5px white;
+    text-align: center;
+}

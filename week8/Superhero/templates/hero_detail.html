@@ -15,8 +15,9 @@
     <p>
         <img src="{{ hero.image }}" alt="{{ hero.name }}" width="500">
     </p>
-    <p>
-        <a href="/hero/">Show all Heroes</a>
+    <p class="aligncenter"><a href="/hero/{{ hero.pk }}/">Edit Superhero</a>
+    <a href="/hero/{{ superhero.pk }}/delete">Delete Superhero</a>
+    <a href="/hero/">Show all Heroes</a>
     </p>
 </body>
 

@@ -1,0 +1,15 @@
+{% extends 'superhero_theme.html' %}
+
+{% block content %}
+
+	<h1>Create a New Superhero</h1>
+
+	<form action="" method="post">{% csrf_token %}
+
+	    {{ form.as_ul }}
+
+	    <button type="submit">Add Hero</button>
+	    <a href="/hero">Cancel</a>
+	</form>
+
+{% endblock content %}
